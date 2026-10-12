@@ -843,7 +843,10 @@
   .project-card,
   .pillar-card,
   .cert-card,
-  .contact-card-btn {
+  .contact-card-btn,
+  .footer-link,
+  .footer-ext-icon,
+  .footer-up-icon {
     transform: none !important;
     transition: none !important;
   }
@@ -1365,6 +1368,228 @@
   }
 }
 
+/* ==========================================================================
+   FOOTER (Pied de page minimaliste) — Tech & Cobalt
+   ========================================================================== */
+.site-footer {
+  background-color: var(--color-background);
+  border-top: var(--border-thin) solid var(--color-border);
+  padding-block: var(--space-12) var(--space-8);
+  margin-top: auto;
+}
 
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
 
+.footer-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 520px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding-block: var(--space-1);
+  text-decoration: none;
+  width: fit-content;
+  border-radius: var(--radius-sm);
+  transition: opacity var(--transition-base);
+}
+
+.footer-logo:hover {
+  opacity: 0.85;
+}
+
+.footer-logo:focus-visible {
+  outline: var(--focus-ring-width) var(--focus-ring-style) var(--color-focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+.footer-logo-mark {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-accent-cobalt-text);
+  font-weight: 500;
+}
+
+.footer-name {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.footer-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--text-body-sm-line);
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.footer-bullet {
+  color: var(--color-border);
+  font-weight: 600;
+}
+
+/* — Liens & navigation droite — */
+.footer-nav-col {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  border: var(--border-thin) solid transparent;
+  transition:
+    color var(--transition-base),
+    border-color var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.footer-link:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.footer-link:focus-visible {
+  outline: var(--focus-ring-width) var(--focus-ring-style) var(--color-focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+.footer-link-icon {
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.footer-ext-icon,
+.footer-up-icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition:
+    transform var(--transition-base),
+    opacity var(--transition-base),
+    color var(--transition-base);
+}
+
+.footer-link:hover .footer-ext-icon {
+  transform: translate(2px, -2px);
+  opacity: 1;
+  color: var(--color-accent-orange);
+}
+
+.footer-link:hover .footer-up-icon {
+  transform: translateY(-2px);
+  opacity: 1;
+  color: var(--color-accent-cobalt-text);
+}
+
+/* — Ligne inférieure — */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-top: var(--space-6);
+  border-top: var(--border-thin) solid var(--color-divider);
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  line-height: var(--text-caption-line);
+}
+
+.footer-signature {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.signature-mono {
+  font-family: var(--font-mono);
+  color: var(--color-accent-cobalt-text);
+  font-weight: 500;
+}
+
+/* — Responsive Footer : Tablette & Mobile — */
+@media (max-width: 768px) {
+  .site-footer {
+    padding-block: var(--space-10) var(--space-6);
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-6);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-link {
+    padding-inline: var(--space-2);
+  }
+
+  .footer-subtitle {
+    font-size: var(--text-xs);
+  }
+}
