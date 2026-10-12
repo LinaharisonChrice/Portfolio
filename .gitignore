@@ -1,0 +1,23 @@
+# ==============================================================================
+# Fichiers exclus du versionnement et de la publication — Portfolio CHRICE
+# ==============================================================================
+
+# Système d'exploitation et éditeurs
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Fichiers d'environnement et secrets
+.env
+.env.*
+*.log
+
+# Dossiers et fichiers temporaires / tests locaux
+node_modules/
+scratch/
+
+# Fichiers de travail et de suivi interne (ne doivent pas être exposés sur le web public)
+AI_HANDOVER.md
+rapport.md

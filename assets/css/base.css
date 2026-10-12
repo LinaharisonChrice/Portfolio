@@ -1,0 +1,109 @@
+/* ============================================================================
+   CHRICE Design System — Foundational Styles (Reset & Base)
+   Cobalt & Orange | Minimalist Tech Portfolio
+   ============================================================================
+   Imports tokens and typography, applies a minimal modern reset,
+   and sets base interactive styles (links, focus, selection).
+   No page sections, no layout components — foundations only.
+   ============================================================================ */
+
+/* ==========================================================================
+   1. COUCHE BASE & RESET MODERNE
+   (design-tokens.css et typography.css sont liés en amont dans index.html)
+   ========================================================================== */
+
+/* ==========================================================================
+   2. MODERN RESET (minimal)
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* ==========================================================================
+   3. BASE LINK STYLES
+   ========================================================================== */
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: var(--transition-property-colors) var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+/* ==========================================================================
+   4. FOCUS STYLES (keyboard accessibility — WCAG 2.2 AA)
+   ========================================================================== */
+
+/* Remove default outline, apply custom focus ring */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) var(--focus-ring-style) var(--color-focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* ==========================================================================
+   5. SELECTION STYLES
+   ========================================================================== */
+::selection {
+  background-color: var(--brand-cobalt);
+  color: var(--color-text-primary);
+}
+
+/* ==========================================================================
+   6. SCROLLBAR (subtle, matching dark theme)
+   ========================================================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-cobalt);
+}

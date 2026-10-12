@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Linaharison Chrice, Étudiant et Tech Builder passionné par la cybersécurité, l'intelligence artificielle et l'automatisation." />
+  <title>Linaharison Chrice — Tech Builder | Portfolio</title>
+
+  <!-- Favicon (format vectoriel moderne SVG) -->
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+
+  <!-- Métadonnées Open Graph (Partage social) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Linaharison Chrice" />
+  <meta property="og:title" content="Linaharison Chrice — Tech Builder | Portfolio" />
+  <meta property="og:description" content="Portfolio de Linaharison Chrice, Étudiant et Tech Builder passionné par la cybersécurité, l'intelligence artificielle et l'automatisation." />
+  <meta property="og:url" content="https://linaharisonchrice.github.io/Portfolio/" />
+  <meta property="og:image" content="https://linaharisonchrice.github.io/Portfolio/assets/images/portrait.jpg" />
+
+  <!-- Métadonnées Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Linaharison Chrice — Tech Builder | Portfolio" />
+  <meta name="twitter:description" content="Portfolio de Linaharison Chrice, Étudiant et Tech Builder passionné par la cybersécurité, l'intelligence artificielle et l'automatisation." />
+
+  <!-- Préconnexion aux origines critiques Google Fonts (élimine la latence DNS/TLS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts — Chargement direct et non bloquant -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+
+  <!-- Feuilles de style locales — Chargement parallèle sans cascade @import bloquante -->
+  <link rel="stylesheet" href="./assets/css/design-tokens.css" />
+  <link rel="stylesheet" href="./assets/css/typography.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+<body>
+
+  <!-- ====================================================================
+       SKIP LINK — Accessibilité clavier (WCAG 2.4.1)
+  ===================================================================== -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ====================================================================
+       HEADER — Navigation principale
+  ===================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner container">
+
+      <!-- Identité / Logo texte -->
+      <a href="#main-content" class="site-logo" aria-label="CHRICE — Accueil">
+        <span class="logo-mark" aria-hidden="true">&#x2F;&#x2F;</span>
+        <span class="logo-name">CHRICE</span>
+      </a>
+
+      <!-- Navigation desktop -->
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li><a href="#main-content" class="nav-link nav-link--active" aria-current="page">Accueil</a></li>
+          <li><a href="#projets" class="nav-link">Projets</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#a-propos" class="nav-link">À propos</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA principal + Burger -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn--accent" aria-label="Me contacter">Me contacter</a>
+
+        <!-- Burger mobile -->
+        <button
+          class="burger"
+          id="burger-btn"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation mobile -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Menu de navigation">
+      <nav aria-label="Navigation mobile">
+        <ul class="mobile-nav-list" role="list">
+          <li><a href="#main-content" class="mobile-nav-link" aria-current="page">Accueil</a></li>
+          <li><a href="#projets" class="mobile-nav-link">Projets</a></li>
+          <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+          <li><a href="#a-propos" class="mobile-nav-link">À propos</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          <li><a href="#contact" class="btn btn--accent mobile-cta">Me contacter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       MAIN — Premier écran (Hero)
+  ===================================================================== -->
+  <main id="main-content" tabindex="-1">
+    <section class="hero" aria-label="Présentation de Linaharison Chrice">
+      <div class="hero-inner container">
+
+        <!-- Colonne gauche : Identité & texte -->
+        <div class="hero-text">
+
+          <!-- Introduction -->
+          <p class="hero-intro">
+            <span class="intro-label">Bonjour, je m'appelle</span>
+          </p>
+
+          <!-- Nom complet — hiérarchie principale -->
+          <h1 class="hero-name">
+            Linaharison<br />
+            <span class="name-last">Chrice.</span>
+          </h1>
+
+          <!-- Statut -->
+          <p class="hero-status">
+            <span class="status-mono">// </span>Étudiant
+          </p>
+
+          <!-- Domaines -->
+          <div class="hero-domains" aria-label="Domaines d'intérêt">
+            <span class="domain-pill domain-pill--primary">Tech Builder</span>
+            <span class="domain-pill">Cybersécurité</span>
+            <span class="domain-pill">Intelligence artificielle</span>
+          </div>
+
+          <!-- Phrase secondaire -->
+          <p class="hero-bio">
+            Je construis des projets à la croisée du développement,
+            de la sécurité et de l'IA — par curiosité, par méthode.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn--secondary hero-cta">
+              Découvrir mes projets
+              <svg class="btn-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              Me contacter
+            </a>
+            <a
+              href="./assets/documents/cv.pdf"
+              download="CV_Linaharison_Chrice.pdf"
+              class="btn btn--download"
+              aria-label="Télécharger mon CV (fichier PDF)"
+            >
+              <svg class="btn-icon btn-icon--left" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16">
+                <path d="M8 2v8M5 7l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              Télécharger le CV
+            </a>
+          </div>
+
+        </div><!-- /.hero-text -->
+
+        <!-- Colonne droite : Photo portrait réelle -->
+        <div class="hero-portrait">
+          <div class="portrait-frame">
+            <picture>
+              <source srcset="./assets/images/portrait.webp" type="image/webp" />
+              <img
+                src="./assets/images/portrait.jpg"
+                alt="Portrait de Linaharison Chrice"
+                class="portrait-img"
+                width="340"
+                height="453"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
+            <!-- Accent décoratif — coin cobalt & orange -->
+            <div class="portrait-accent portrait-accent--tl" aria-hidden="true"></div>
+            <div class="portrait-accent portrait-accent--br" aria-hidden="true"></div>
+          </div>
+        </div><!-- /.hero-portrait -->
+
+      </div><!-- /.hero-inner -->
+    </section>
+
+    <!-- ====================================================================
+         SECTION PROJETS (id="projets") — Réalisations
+    ===================================================================== -->
+    <section id="projets" class="projects-section" aria-labelledby="projects-title">
+      <div class="container">
+
+        <!-- En-tête de section -->
+        <div class="section-header">
+          <p class="section-badge" aria-hidden="true">
+            <span class="badge-slash">// </span>RÉALISATIONS
+          </p>
+          <h2 id="projects-title" class="section-title">Projets Développés</h2>
+          <p class="section-desc">
+            Sélection de réalisations confirmées, alliant développement web, automatisation logicielle et diagnostic d'environnements distants.
+          </p>
+        </div>
+
+        <!-- Grille de cartes de projets -->
+        <div class="projects-grid">
+
+          <!-- Projet 1 : Site web du cybercafé (Principal) -->
+          <article class="project-card project-card--featured">
+            <div class="project-card-header">
+              <span class="project-tag project-tag--primary">Web &amp; Services</span>
+              <span class="project-status">
+                <span class="status-indicator status-indicator--live" aria-hidden="true"></span>
+                <span>Fonctionnel</span>
+              </span>
+            </div>
+            <h3 class="project-title">Site web du cybercafé</h3>
+            <p class="project-desc">
+              Site web développé et fonctionnel pour un cybercafé, conçu pour assurer la présence en ligne de l'établissement et présenter ses activités.
+            </p>
+            <div class="project-specs">
+              <div class="spec-item">
+                <span class="spec-label">Statut</span>
+                <span class="spec-value">Développé et fonctionnel</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Domaine</span>
+                <span class="spec-value">Développement Web</span>
+              </div>
+            </div>
+            <div class="project-techs" aria-label="Compétences appliquées">
+              <span class="tech-pill">Développement Web</span>
+              <span class="tech-pill">Interface Responsive</span>
+            </div>
+          </article>
+
+          <!-- Projet 2 : Bot d'hébergement Python/JavaScript (Principal) -->
+          <article class="project-card project-card--featured">
+            <div class="project-card-header">
+              <span class="project-tag project-tag--primary">Automation</span>
+              <span class="project-status">
+                <span class="status-indicator" aria-hidden="true"></span>
+                <span>Réalisé</span>
+              </span>
+            </div>
+            <h3 class="project-title">Bot d'hébergement Python &amp; JavaScript</h3>
+            <p class="project-desc">
+              Projet de bot d'hébergement développé en Python et JavaScript, conçu pour l'exécution et la gestion de scripts applicatifs.
+            </p>
+            <div class="project-specs">
+              <div class="spec-item">
+                <span class="spec-label">Statut</span>
+                <span class="spec-value">Projet réalisé</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Langages</span>
+                <span class="spec-value">Python, JavaScript</span>
+              </div>
+            </div>
+            <div class="project-techs" aria-label="Compétences appliquées">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Automatisation</span>
+            </div>
+          </article>
+
+          <!-- Projet 3 : Bot de gestion Netflix -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-tag">Gestion</span>
+              <span class="project-status">
+                <span class="status-indicator" aria-hidden="true"></span>
+                <span>Réalisé</span>
+              </span>
+            </div>
+            <h3 class="project-title">Bot de gestion Netflix</h3>
+            <p class="project-desc">
+              Projet de bot d'automatisation et de gestion développé pour le suivi des services liés à Netflix.
+            </p>
+            <div class="project-specs">
+              <div class="spec-item">
+                <span class="spec-label">Statut</span>
+                <span class="spec-value">Projet réalisé</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Domaine</span>
+                <span class="spec-value">Automatisation &amp; Gestion</span>
+              </div>
+            </div>
+            <div class="project-techs" aria-label="Compétences appliquées">
+              <span class="tech-pill">Automatisation</span>
+              <span class="tech-pill">Gestion de Services</span>
+            </div>
+          </article>
+
+          <!-- Projet 4 : Audit VPS / RDP -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-tag">Systèmes &amp; Réseau</span>
+              <span class="project-status">
+                <span class="status-indicator" aria-hidden="true"></span>
+                <span>Réalisé</span>
+              </span>
+            </div>
+            <h3 class="project-title">Audit &amp; Diagnostic VPS / RDP</h3>
+            <p class="project-desc">
+              Projet technique axé sur l'analyse, le diagnostic de connectivité et l'audit de configuration pour serveurs VPS et services d'accès distant.
+            </p>
+            <div class="project-specs">
+              <div class="spec-item">
+                <span class="spec-label">Statut</span>
+                <span class="spec-value">Projet réalisé</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Domaine</span>
+                <span class="spec-value">Audit VPS &amp; Accès Distant</span>
+              </div>
+            </div>
+            <div class="project-techs" aria-label="Compétences appliquées">
+              <span class="tech-pill">Environnement VPS</span>
+              <span class="tech-pill">Protocoles d'Accès Distant</span>
+              <span class="tech-pill">Diagnostic Réseau</span>
+            </div>
+          </article>
+
+        </div><!-- /.projects-grid -->
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================================
+         SECTION CERTIFICATIONS — Formations & Accréditations
+    ===================================================================== -->
+    <section id="certifications" class="certifications-section" aria-labelledby="certifications-title">
+      <div class="container">
+
+        <div class="section-header">
+          <p class="section-badge" aria-hidden="true">
+            <span class="badge-slash">// </span>ACCRÉDITATIONS
+          </p>
+          <h2 id="certifications-title" class="section-title">Certifications &amp; formations</h2>
+          <p class="section-desc">
+            Formations suivies et certifications vérifiées attestant d'apprentissages techniques récents.
+          </p>
+        </div>
+
+        <div class="certifications-container">
+          <article class="cert-card">
+            <div class="cert-card-header">
+              <div class="cert-meta-left">
+                <span class="cert-platform-badge">Coursera</span>
+                <span class="cert-status">
+                  <span class="status-indicator status-indicator--live" aria-hidden="true"></span>
+                  <span>Certificat vérifié</span>
+                </span>
+              </div>
+              <time class="cert-date" datetime="2026-10-08">8 octobre 2026</time>
+            </div>
+
+            <div class="cert-card-content">
+              <div class="cert-info">
+                <h3 class="cert-title">Google AI Fundamentals</h3>
+                <p class="cert-issuer">Délivré par Google via Coursera</p>
+                <p class="cert-desc">
+                  Formation certifiante portant sur les principes fondamentaux de l'intelligence artificielle, les concepts clés du machine learning et leurs applications pratiques.
+                </p>
+              </div>
+
+              <div class="cert-actions">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/7Z7U44DPTAC9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--secondary cert-btn"
+                  aria-label="Voir le certificat Google AI Fundamentals sur Coursera (ouvre un nouvel onglet)"
+                >
+                  <span>Voir le certificat</span>
+                  <svg class="btn-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16">
+                    <path d="M6 3h7v7M13 3L6 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================================
+         SECTION À PROPOS (id="a-propos") — Profil & Démarche
+    ===================================================================== -->
+    <section id="a-propos" class="about-section" aria-labelledby="about-title">
+      <div class="container">
+
+        <div class="about-layout">
+
+          <!-- Colonne gauche : Présentation personnelle & Démarche -->
+          <div class="about-intro-col">
+            <div class="section-header">
+              <p class="section-badge" aria-hidden="true">
+                <span class="badge-slash">// </span>PROFIL
+              </p>
+              <h2 id="about-title" class="section-title">À propos de moi</h2>
+            </div>
+
+            <!-- Présentation personnelle (Idée A) -->
+            <div class="about-bio">
+              <p class="about-lead">
+                Je m'appelle Linaharison Chrice. En tant qu'étudiant passionné par l'écosystème numérique, je m'intéresse au développement logiciel, aux architectures réseau et à l'automatisation.
+              </p>
+              <p class="about-text">
+                Mon apprentissage s'articule autour de la pratique : concevoir des applications web fonctionnelles, comprendre le fonctionnement des systèmes en profondeur et expérimenter des solutions concrètes face à des besoins réels.
+              </p>
+            </div>
+
+            <!-- Ma démarche (Idée C) -->
+            <div class="about-method-card">
+              <div class="method-card-header">
+                <span class="method-marker" aria-hidden="true">// </span>
+                <span class="method-label">Ma démarche</span>
+              </div>
+              <p class="method-desc">
+                Comprendre le problème avant d'écrire la première ligne de code, explorer les approches possibles, expérimenter par itérations et chercher une solution utile, claire et maintenable.
+              </p>
+            </div>
+          </div><!-- /.about-intro-col -->
+
+          <!-- Colonne droite : Les trois domaines d'intérêt (Idée B) -->
+          <div class="about-pillars-col">
+            <h3 class="pillars-heading">Centres d'intérêt techniques</h3>
+
+            <div class="pillars-list">
+
+              <!-- Pilier 1 : Tech Builder -->
+              <article class="pillar-card">
+                <div class="pillar-header">
+                  <span class="pillar-badge pillar-badge--cobalt" aria-hidden="true">01</span>
+                  <h4 class="pillar-title">Tech Builder</h4>
+                </div>
+                <p class="pillar-desc">
+                  Curiosité constante pour la conception et la réalisation de projets techniques de bout en bout, de l'interface utilisateur jusqu'à la logique d'automatisation.
+                </p>
+              </article>
+
+              <!-- Pilier 2 : Cybersécurité -->
+              <article class="pillar-card">
+                <div class="pillar-header">
+                  <span class="pillar-badge pillar-badge--orange" aria-hidden="true">02</span>
+                  <h4 class="pillar-title">Cybersécurité</h4>
+                </div>
+                <p class="pillar-desc">
+                  Intérêt pour la compréhension des systèmes et des réseaux, l'analyse des protocoles de communication et les enjeux de sécurité liés aux accès distants.
+                </p>
+              </article>
+
+              <!-- Pilier 3 : Intelligence artificielle -->
+              <article class="pillar-card">
+                <div class="pillar-header">
+                  <span class="pillar-badge pillar-badge--neutral" aria-hidden="true">03</span>
+                  <h4 class="pillar-title">Intelligence artificielle</h4>
+                </div>
+                <p class="pillar-desc">
+                  Intérêt pour les possibilités de l'IA et son application concrète à des projets d'automatisation, de traitement d'informations et d'assistance aux usages quotidiens.
+                </p>
+              </article>
+
+            </div><!-- /.pillars-list -->
+          </div><!-- /.about-pillars-col -->
+
+        </div><!-- /.about-layout -->
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ====================================================================
+         SECTION CONTACT (id="contact") — Canaux d'Échange & Coordonnées
+    ===================================================================== -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="section-header">
+          <p class="section-badge" aria-hidden="true">
+            <span class="badge-slash">// </span>COMMUNICATION
+          </p>
+          <h2 id="contact-title" class="section-title">Entrons en contact</h2>
+          <p class="section-desc">
+            Un projet à développer, une collaboration technique ou une opportunité d'échange ? Vous pouvez me joindre directement via les canaux ci-dessous.
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-grid">
+
+            <!-- Bouton 1 : WhatsApp -->
+            <a
+              href="https://wa.me/261388629307"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card-btn"
+              aria-label="Contacter Linaharison Chrice sur WhatsApp (ouvre un nouvel onglet)"
+            >
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                  <path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.29"/>
+                </svg>
+              </span>
+              <span class="contact-btn-label">WhatsApp</span>
+              <svg class="contact-btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="14" height="14">
+                <path d="M6 3h7v7M13 3L6 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <!-- Bouton 2 : Facebook -->
+            <a
+              href="https://www.facebook.com/MDG.TOMO1111"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card-btn"
+              aria-label="Consulter le profil Facebook de Linaharison Chrice (ouvre un nouvel onglet)"
+            >
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                  <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </span>
+              <span class="contact-btn-label">Facebook</span>
+              <svg class="contact-btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="14" height="14">
+                <path d="M6 3h7v7M13 3L6 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <!-- Bouton 3 : TikTok -->
+            <a
+              href="https://www.tiktok.com/@m_g.mp4"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card-btn"
+              aria-label="Consulter le profil TikTok de Linaharison Chrice (ouvre un nouvel onglet)"
+            >
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                  <path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.98-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.27 1.76-.23.84-.06 1.78.44 2.47.6.86 1.63 1.36 2.67 1.34 1.17-.03 2.27-.67 2.78-1.72.31-.6.44-1.29.44-1.97.02-5.79-.01-11.59.02-17.38z"/>
+                </svg>
+              </span>
+              <span class="contact-btn-label">TikTok</span>
+              <svg class="contact-btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="14" height="14">
+                <path d="M6 3h7v7M13 3L6 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <!-- Bouton 4 : E-mail -->
+            <a
+              href="mailto:chrice15122006@gmail.com"
+              class="contact-card-btn"
+              aria-label="Envoyer un e-mail à Linaharison Chrice"
+            >
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                  <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </span>
+              <span class="contact-btn-label">E-mail</span>
+              <svg class="contact-btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="14" height="14">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+          </div><!-- /.contact-grid -->
+        </div><!-- /.contact-container -->
+
+      </div><!-- /.container -->
+    </section>
+  </main>
+
+  <!-- App JS -->
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>
